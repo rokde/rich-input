@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 101 Template</title>
+
+	<!-- Bootstrap -->
+	<link href="vendor/twitter/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		#container
+		{
+			margin:50px; padding:10px; width:460px
+		}
+		#contentbox
+		{
+			width:458px; height:50px;
+			border:solid 2px #333;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+			margin-bottom:6px;
+			text-align:left;
+		}
+		#msgbox
+		{
+			border:solid 1px #dedede;padding:5px;
+			display:none;background-color:#f2f2f2
+		}
+		#display
+		{
+			display:none;
+			border-left:solid 1px #dedede;
+			border-right:solid 1px #dedede;
+			border-bottom:solid 1px #dedede;
+			overflow:hidden;
+		}
+		.display_box
+		{
+			padding:4px; border-top:solid 1px #dedede; font-size:12px; height:30px;
+		}
+		.display_box:hover
+		{
+			background:#3b5998;
+			color:#FFFFFF;
+		}
+		.display_box a {
+			display: block;
+		}
+		.image
+		{
+			width:25px; float:left; margin-right:6px
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	<h1>Hello, world!</h1>
+
+	<div class="row">
+		<div class="col-md12">
+			<div id="container">
+				<div id="contentbox" contenteditable="true"></div>
+				<div id="display"></div>
+				<div id="msgbox"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="vendor/components/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="vendor/twitter/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="src/jquery.rich-input.js"></script>
+<script>
+
+	$(document).ready(function () {
+
+		$('#contentbox').richInput();
+
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "name": "rokde/rich-input",
+    "description": "Autosuggest requested special values by hitting hot keys/chars. Like the facebook username resolving.",
+    "require": {
+		"components/jquery": "~2.1.1",
+        "twitter/bootstrap": "~3.2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rokde",
+            "email": "github@mail.robert-kummer.de"
+        }
+    ],
+    "minimum-stability": "dev"
+}
